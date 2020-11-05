@@ -2,10 +2,10 @@
 Our HackTX 2020 project - a speech to spreadsheet command productivity tool - link to devpost submission (https://devpost.com/software/omelia)
 
 # Inspiration
-There are approximately 19.2 million that have a disability, which impacts their ability to type on a keyboard or use a mouse. These individuals have trouble using productivity tools like Google Sheets. Additionally, kids that just learning to use spreadsheet software might find it daunting to navigate around all the potential options. For these reasons, we built Omeilia to help bridge this gap.
+There are approximately 19.2 million that have a disability, which impacts their ability to type on a keyboard or use a mouse. These individuals have trouble using productivity tools like Google Sheets. Additionally, kids that just learning to use spreadsheet software might find it daunting to navigate around all the potential options. For these reasons, we built Omeilia to help bridge this gap. In Greek, Omelia means speaking and we felt that a lot could be done with just one's voice.
 
 # What it does
-In Greek, Omelia means speaking and we felt that a lot could be done with just one's voice. So, we built a chrome extension that converts voice commands to actual changes on a google sheet. For example, a user can simply say "insert 4 in B7" and more complex commands like "sort by column 2." We wanted the experience to be as organic as possible, so we used cosine similarity and stopword sections to allow commands like "Hey Omelia, can you please bold B7."
+Our application allows you to directly talk to your spreadsheet in plain English to execute commands to manipulate data. For example, a user can simply say "What's up Omelia, can you please insert a 4 in cell B7?" and more complex commands like "please sort the entire table by column 2", "calculate the average of column F and store the result in cell C5", and more! We wanted the experience to be as organic as possible, so we used glove embeddings, cosine similarity, and stopword detection to make Omelia understand human speech.
 
 # How we built it
 Chrome extension: HTML, JS, CSS Backend: Flask to make an API endpoint in Python Google Cloud Platform: Google Sheets API, WebSpeech API Natural Language Processing: Using both cosine similarity and stopword detection
